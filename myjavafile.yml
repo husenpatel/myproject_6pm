@@ -1,0 +1,15 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks: 
+     - name: install java jdk8 on ubuntu server
+       apt: 
+         name: "{{myjavajdk8onubuntu}}"
+         state: present
+         when: ansible_os_family=="Debian" 
+
+     - name: install java jdk8 on redhat server
+       yum:
+         name: "{{myjavajdk8onredhat}}"
+         state: present
+         when: ansible_os_family=="RedHat"
