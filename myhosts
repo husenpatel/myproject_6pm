@@ -1,1 +1,10 @@
 172.31.90.134
+
+
+[DBserver]
+172.31.90.134
+172.31.20.23
+
+[mywebserver:vars]
+myjavajdk8onubuntu= openjdk-8-jdk
+myjavajdk8onredhat= java-1.8.0-openjdk
